@@ -18,7 +18,6 @@ import axios from "axios";
 // Plugins
 
 import initProgress from "./progressbar";
-import VueYouTubeEmbed from "vue-youtube-embed";
 // router setup
 import routes from "./routes/routes";
 import firebase from "firebase";
@@ -38,8 +37,7 @@ Vue.use(BootstrapVue);
 import "v-calendar-scheduler/lib/main.css";
 
 // library imports
-import "./assets/sass/paper-dashboard.scss";
-import "./assets/sass/demo.scss";
+
 
 import sidebarLinks from "./sidebarLinks";
 import "./registerServiceWorker";
@@ -188,7 +186,6 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-Vue.use(VueYouTubeEmbed);
 
 Vue.use(Vuex);
 Vue.use(Loading.directive);

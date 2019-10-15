@@ -14,9 +14,8 @@
   <meta name="googlebot" content="index,follow" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <title>스토어링크 - 퍼포먼스 마케팅 플랫폼</title>
-  <meta name="description" content="스토어링크는 온라인 쇼핑몰 판매자들을 위한 최고의 퍼포먼스 마케팅 플랫폼입니다. 제품별 순위관리, 상위노출 컨설팅, 구매 체험단, 공동구매를 지원합니다."
-  />
+  <title>Vue.js | BoilerPlate | PWA</title>
+
   <!-- Bootstrap core CSS     -->
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
@@ -33,13 +32,7 @@
   <link type="text/css" href="<%= webpackConfig.output.publicPath %>static/css/handsontable.full.css" rel="stylesheet" />
   <link type="text/css" href="<%= webpackConfig.output.publicPath %>static/css/jquery-confirm.css" rel="stylesheet" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64358580-16"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'UA-64358580-16');
-  </script>
 </head>
 
 <body>
@@ -48,54 +41,11 @@
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- <script src="https://rawgit.com/codesandcoffee/vuejs-landing-page/master/src/assets/js/wow.min.js"></script>
-    <script src="https://rawgit.com/codesandcoffee/vuejs-landing-page/master/src/assets/js/jquery.singlePageNav.min.js"></script>
-    <script src="https://rawgit.com/codesandcoffee/vuejs-landing-page/master/src/assets/js/custom.js"></script> -->
   <script src="<%= webpackConfig.output.publicPath %>static/js/aes.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
   <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
   <script src="<%= webpackConfig.output.publicPath %>static/js/jquery-confirm.js"></script>
-  <script>
-    ; window.channelPluginSettings = {
-      "pluginKey": "9080c269-a81a-4d54-8e67-ff6c7418a544"
-    };
-    (function () {
-      var w = window;
-      if (w.ChannelIO) {
-        return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
-      }
-      var d = window.document;
-      var ch = function () {
-        ch.c(arguments);
-      };
-      ch.q = [];
-      ch.c = function (args) {
-        ch.q.push(args);
-      };
-      w.ChannelIO = ch;
-      function l() {
-        if (w.ChannelIOInitialized) {
-          return;
-        }
-        w.ChannelIOInitialized = true;
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-        s.charset = 'UTF-8';
-        var x = document.getElementsByTagName('script')[0];
-        x.parentNode.insertBefore(s, x);
-      }
-      if (document.readyState === 'complete') {
-        l();
-      } else if (window.attachEvent) {
-        window.attachEvent('onload', l);
-      } else {
-        window.addEventListener('DOMContentLoaded', l, false);
-        window.addEventListener('load', l, false);
-      }
-    })();
-  </script>
+
 </body>
 
 </html>
